@@ -8,9 +8,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import DiaryEntry
 
 
-
 # Create your views here.
 def base(request):
     diary_entries = DiaryEntry.objects.all()
-    return render(request, "base.html",{"diary_entries": diary_entries})
-
+    return render(request, "home.html", {"diary_entries": diary_entries})
