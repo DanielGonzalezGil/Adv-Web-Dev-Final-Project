@@ -14,11 +14,11 @@
 <body class="body">
     <h1 style="padding-bottom: 20px">My Diary Entries</h1>
 
-    {% for entry in diary_entries  %}
-    <div class="container text-center">
-        <div class="row justify-content-center">
-            <div class="col">
-                <div class="card border border-black border border-2" style="width: 20rem; background-color: #feff9c;">
+    <div class="container">
+        <div class="row justify-content-start">
+            {% for entry in diary_entries  %}
+            <div class="col-md-6 col-md-4 col-lg-3">
+                <div class="card border border-black border border-2" style="width: 100%; margin-bottom: 20px; background-color: #feff9c;">
                     <div class="card-header text-end bg-transparent border-0" style="padding: 0.5rem;">
                         {% comment %} Trash Icon {% endcomment %}
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
