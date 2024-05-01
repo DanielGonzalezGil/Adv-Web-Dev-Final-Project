@@ -1,7 +1,9 @@
 from django.urls import path
 from . import views
-from django.contrib.auth import views as auth_views
+
 
 urlpatterns = [
-    path("", views.base, name="base"),
+    path("home/", views.home, name="home"),  # This one works
+    path("register/", views.register, name="register"),  # This one does not work
+    path("login/", views.login, name="login"),  # this one does not work
 ]
