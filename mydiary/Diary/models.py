@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 # Database schema for the Diary app
 
 
-# maybe add a PK?
 class DiaryEntry(models.Model):
     created_by = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="diary_entries"
