@@ -24,3 +24,4 @@ After running the git command in your Terminal/Command Prompt, you should have a
 ```
  python manage.py runserver
 ```
+Make sure that the server URL has  /home at the end, like in the following: "http://127.0.0.1:8000/home/"
